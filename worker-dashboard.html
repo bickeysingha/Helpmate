@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Worker Dashboard | HelpMate</title>
+
+    <link rel="stylesheet" href="css/worker-dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>HelpMate</h2>
+
+    <ul>
+
+        <li class="active">🏠 Dashboard</li>
+
+        <li>📋 My Jobs</li>
+
+        <li>💰 Earnings</li>
+
+        <li>⭐ Reviews</li>
+
+        <li>👤 Profile</li>
+
+        <li id="logoutBtn">🚪 Logout</li>
+
+    </ul>
+
+</div>
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h2 id="welcomeText">Welcome 👋</h2>
+
+        <div class="status">
+
+            <label>
+
+                Available
+
+                <input type="checkbox" id="availabilitySwitch">
+
+            </label>
+
+        </div>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Today's Jobs</h3>
+
+            <h1 id="todayJobs">0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Completed Jobs</h3>
+
+            <h1 id="completedJobs">0</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Rating</h3>
+
+            <h1 id="rating">0 ⭐</h1>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Earnings</h3>
+
+            <h1 id="earnings">₹0</h1>
+
+        </div>
+
+    </div>
+
+    <div class="profile">
+
+        <h2>My Information</h2>
+
+        <table>
+
+            <tr>
+
+                <td>Name</td>
+
+                <td id="name"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Category</td>
+
+                <td id="category"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Experience</td>
+
+                <td id="experience"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>Hourly Rate</td>
+
+                <td id="rate"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>City</td>
+
+                <td id="city"></td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+<section class="requests">
+
+    <h2>Pending Booking Requests</h2>
+
+    <div id="requestContainer">
+
+        <p>No Pending Requests</p>
+
+    </div>
+
+</section>
+
+<script type="module" src="js/worker/worker-dashboard.js"></script>
+
+</body>
+
+</html>

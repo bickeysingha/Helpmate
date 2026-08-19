@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Worker</title>
+
+<link rel="stylesheet" href="css/booking.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Book Worker</h1>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="workerName"
+readonly>
+
+<input
+type="text"
+id="category"
+readonly>
+
+<input
+type="text"
+id="rate"
+readonly>
+
+<input
+type="date"
+id="workDate"
+required>
+
+<input
+type="time"
+id="workTime"
+required>
+
+<textarea
+id="workDescription"
+placeholder="Describe the work"
+required></textarea>
+
+<textarea
+id="workAddress"
+placeholder="Work Address"
+required></textarea>
+
+<button type="submit">
+
+Confirm Booking
+
+</button>
+
+</form>
+
+</div>
+
+<script type="module" src="js/customer/booking.js"></script>
+
+</body>
+
+
+
+</html>

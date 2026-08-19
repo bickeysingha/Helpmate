@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Customer Dashboard</title>
+
+<link rel="stylesheet"
+href="css/customer_dashboard.css">
+
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+
+HelpMate
+
+</div>
+
+<ul>
+
+<li>Home</li>
+
+<li>Bookings</li>
+
+<li>Profile</li>
+
+<li id="logoutBtn">Logout</li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1 id="welcomeMessage">
+
+Welcome 👋
+
+</h1>
+
+<p>
+
+Find trusted workers in just a few clicks.
+
+</p>
+
+</section>
+
+<section class="search">
+
+<input
+type="text"
+placeholder="Search workers...">
+
+<button>
+
+Search
+
+</button>
+
+</section>
+
+<section class="services">
+
+<h2>
+
+Popular Services
+
+</h2>
+
+<div class="cards">
+
+<div class="card" data-category="Maid">
+
+🧹
+
+<p>Maid</p>
+
+</div>
+
+<div class="card" data-category="Cook">
+
+🍳
+
+<p>Cook</p>
+
+</div>
+
+<div class="card" data-category="Driver">
+
+🚗
+
+<p>Driver</p>
+
+</div>
+
+<div class="card" data-category="Electrician">
+
+⚡
+
+<p>Electrician</p>
+
+</div>
+
+<div class="card" data-category="Plumber">
+
+🔧
+
+<p>Plumber</p>
+
+</div>
+
+<div class="card" data-category="Carpenter">
+
+🪚
+
+<p>Carpenter</p>
+
+</div>
+
+<div class="card bookings-card">
+
+    📋
+
+    <p>My Bookings</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="workers">
+
+<h2>
+
+Recommended Workers
+
+</h2>
+
+<div id="workerContainer">
+
+<p>
+
+No workers available yet.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="booking">
+
+<h2>
+
+Recent Bookings
+
+</h2>
+
+<p>
+
+No bookings yet.
+
+</p>
+
+</section>
+
+<script
+type="module"
+src="js/customer/customer_dashboard.js"></script>
+
+</body>
+
+</html>

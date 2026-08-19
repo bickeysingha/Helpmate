@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Worker Profile</title>
+
+<link rel="stylesheet" href="css/worker-profile.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Complete Your Worker Profile</h1>
+
+<form id="workerProfileForm">
+
+<select id="category" required>
+
+<option value="">Select Category</option>
+
+<option>Maid</option>
+
+<option>Cook</option>
+
+<option>Driver</option>
+
+<option>Electrician</option>
+
+<option>Plumber</option>
+
+<option>Carpenter</option>
+
+<option>Painter</option>
+
+<option>Babysitter</option>
+
+<option>Tutor</option>
+
+</select>
+
+<input
+type="number"
+id="experience"
+placeholder="Experience (Years)"
+required>
+
+<input
+type="number"
+id="hourlyRate"
+placeholder="Hourly Rate (₹)"
+required>
+
+<textarea
+id="description"
+placeholder="Describe your skills..."
+required></textarea>
+
+<label>
+
+<input
+type="checkbox"
+id="availability">
+
+Available for Work
+
+</label>
+
+<button type="submit">
+
+Save Profile
+
+</button>
+
+</form>
+
+</div>
+
+
+<script type="module" src="js/worker/worker-profile.js"></script>
+
+</body>
+
+</html>

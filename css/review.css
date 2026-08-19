@@ -1,0 +1,52 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:Poppins,sans-serif;
+}
+
+body{
+    background:#f4f6fb;
+    display:flex;
+    justify-content:center;
+    padding:50px;
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+select,
+textarea,
+button{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+textarea{
+    height:130px;
+    resize:none;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    cursor:pointer;
+}

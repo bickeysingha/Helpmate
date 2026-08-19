@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HelpMate Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/admin-dashboard.css">
+
+</head>
+
+<body>
+
+    <nav>
+
+        <h2>HelpMate Admin</h2>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <main class="container">
+
+        <h1>Admin Dashboard</h1>
+
+
+        <!-- STATISTICS -->
+
+        <div class="stats">
+
+            <div class="stat-card">
+
+                <h3>Total Users</h3>
+
+                <h2 id="totalUsers">0</h2>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Workers</h3>
+
+                <h2 id="totalWorkers">0</h2>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Customers</h3>
+
+                <h2 id="totalCustomers">0</h2>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <h3>Total Bookings</h3>
+
+                <h2 id="totalBookings">0</h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOOKINGS -->
+
+        <section class="booking-section">
+
+            <h2>Recent Bookings</h2>
+
+            <div id="bookingContainer">
+
+                Loading...
+
+            </div>
+
+        </section>
+
+        
+
+<section class="users-section">
+
+    <h2>Users</h2>
+
+    <div class="user-search">
+
+        <input
+            type="text"
+            id="userSearch"
+            placeholder="Search by name, email or phone number..."
+        >
+
+        <button id="clearUserSearch">
+            Clear
+        </button>
+
+    </div>
+
+
+    <div class="user-table-container">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Verification</th>
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="userTableBody">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<section class="verification-section">
+
+    <h2>Worker Verification</h2>
+
+    <div id="verificationContainer">
+        Loading...
+    </div>
+
+</section>
+
+<div id="editModal" class="edit-modal">
+
+    <div class="edit-modal-content">
+
+        <div class="edit-modal-header">
+
+            <h2>Edit User</h2>
+
+            <button id="closeEditModal">
+                ×
+            </button>
+
+        </div>
+
+
+        <form id="editUserForm">
+
+            <input
+                type="hidden"
+                id="editUserId"
+            >
+
+
+            <label>Name</label>
+
+            <input
+                type="text"
+                id="editName"
+                required
+            >
+
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="editEmail"
+                required
+            >
+
+
+            <label>Phone</label>
+
+            <input
+                type="text"
+                id="editPhone"
+            >
+
+            <label>Aadhaar Number</label>
+
+<input
+    type="text"
+    id="editAadhaar"
+    maxlength="12"
+    placeholder="12-digit Aadhaar number"
+>
+
+<label>PAN Number (Optional)</label>
+
+<input
+    type="text"
+    id="editPan"
+    maxlength="10"
+    placeholder="PAN number"
+>
+
+
+<label>Aadhaar Verification</label>
+
+<select id="editAadhaarStatus">
+
+    <option value="pending">
+        Pending
+    </option>
+
+    <option value="verified">
+        Verified
+    </option>
+
+    <option value="rejected">
+        Rejected
+    </option>
+
+</select>
+
+
+<label>PAN Verification</label>
+
+<select id="editPanStatus">
+
+    <option value="not_provided">
+        Not Provided
+    </option>
+
+    <option value="pending">
+        Pending
+    </option>
+
+    <option value="verified">
+        Verified
+    </option>
+
+    <option value="rejected">
+        Rejected
+    </option>
+
+</select>
+
+
+
+
+
+            <label>City</label>
+
+            <input
+                type="text"
+                id="editCity"
+            >
+
+
+            <label>Category</label>
+
+            <input
+                type="text"
+                id="editCategory"
+            >
+
+
+            <label>Experience</label>
+
+            <input
+                type="number"
+                id="editExperience"
+                min="0"
+            >
+
+
+            <label>Hourly Rate</label>
+
+            <input
+                type="number"
+                id="editHourlyRate"
+                min="0"
+            >
+
+
+            <label>Description</label>
+
+            <textarea
+                id="editDescription"
+                rows="4">
+            </textarea>
+
+
+            <div class="edit-modal-buttons">
+
+                <button
+                    type="button"
+                    id="cancelEdit">
+                    Cancel
+                </button>
+
+                <button
+                    type="submit">
+                    Save Changes
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+    </main>
+
+
+    
+
+    <script
+        type="module"
+        src="js/admin/admin-dashboard.js">
+    </script>
+
+</body>
+
+</html>

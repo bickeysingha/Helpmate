@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="signup-box">
+
+        <h1>Create Account</h1>
+
+        <form id="signupForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Full Name"
+                required>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required>
+
+            <input
+                type="text"
+                id="city"
+                placeholder="City"
+                required>
+
+            <select id="role">
+
+                <option value="">Choose Role</option>
+
+                <option value="customer">
+                    Customer
+                </option>
+
+                <option value="worker">
+                    Worker
+                </option>
+
+            </select>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required>
+
+            <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Confirm Password"
+                required>
+
+            <button type="submit">
+
+                Create Account
+
+            </button>
+
+        </form>
+
+        <p>
+
+            Already have an account?
+
+            <a href="login.html">
+
+                Login
+
+            </a>
+
+        </p>
+
+    </div>
+
+</div>
+
+<script type="module" src="js/auth/auth.js"></script>
+
+</body>
+
+</html>

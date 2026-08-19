@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Review Worker</title>
+
+<link rel="stylesheet" href="css/review.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Review Worker</h1>
+
+    <h2 id="workerName">Worker</h2>
+
+    <form id="reviewForm">
+
+        <label>Rating</label>
+
+        <select id="rating" required>
+
+            <option value="">Select Rating</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+
+        </select>
+
+        <textarea
+            id="review"
+            placeholder="Write your review..."
+            required></textarea>
+
+        <button type="submit">
+            Submit Review
+        </button>
+
+    </form>
+
+</div>
+
+<script type="module" src="js/customer/review.js"></script>
+
+</body>
+
+</html>
