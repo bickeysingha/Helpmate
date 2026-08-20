@@ -198,6 +198,7 @@ if (loginForm) {
             const user =
                 userCredential.user;
 
+            
 
             // Get Firestore profile
             const userSnap =
