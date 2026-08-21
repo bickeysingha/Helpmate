@@ -185,6 +185,7 @@ if (loginForm) {
 
 
         try {
+           
 
             // Firebase Authentication
             const userCredential =
